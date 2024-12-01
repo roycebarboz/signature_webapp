@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signature app</title>
+    <style>
+        .canvas{
+            border: 2px solid black
+        }
+    </style>
 </head>
 <body>
     <div>
         <div class="top">
             <div class="black">
                 <p>Text color picker</p>
+                <input class="form_control" 
+                type="color" 
+                id="colorPicker"/>
+            </div>
+            <div class="black">
+                <p>Background </p>
+                <input class="form_control" 
+                type="color" 
+                id="colorPicker"/>
+            </div>
+            <div class="black">
+                <p>Font size </p>
+                <select id=" fontSize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                </select>
             </div>
         </div>
+        <canvas class="canvas" id="myCanvas"
+        width="800" height="500"></canvas>
     </div>
 </body>
 </html>
